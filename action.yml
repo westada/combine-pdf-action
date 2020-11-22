@@ -1,0 +1,5 @@
+name: 'combine-pdfs'
+description: 'Combines PDFs'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
