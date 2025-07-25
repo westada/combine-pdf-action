@@ -1,5 +1,10 @@
 name: 'combine-pdfs'
 description: 'Combines PDFs'
+inputs:
+  path:  # id of input
+    description: 'path of files to combine'
+    required: true
+    default: 'resources'
 runs:
   using: 'docker'
   image: 'Dockerfile'
