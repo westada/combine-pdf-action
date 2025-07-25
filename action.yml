@@ -5,8 +5,10 @@ inputs:
     description: 'path of files to combine'
     required: true
     default: 'resources'
+  filename:
+    description: 'The name of the output file'
+    required: true
+    default: 'output.pdf'
 runs:
   using: 'docker'
   image: 'Dockerfile'
-  args:
-    - ${{ inputs.path }}
