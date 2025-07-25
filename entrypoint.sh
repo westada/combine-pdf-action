@@ -1,5 +1,5 @@
 #!/bin/sh -l
 
-cd "$1"
+cd "$INPUT_PATH"
 pdfunite * combined.pdf
-echo "::set-output result=$1/combined.pdf"
+echo "::set-output result=$INPUT_PATH/combined.pdf"
